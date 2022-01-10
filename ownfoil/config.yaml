@@ -1,0 +1,24 @@
+name: "Ownfoil"
+description: "Lightweight and customizable Tinfoil Shop manager"
+version: "0.0.4"
+slug: "ownfoil"
+
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+map:
+  - share:rw
+  - media:rw
+
+ports:
+  80/tcp: 8088
+
+options:
+  path: /media/games
+
+schema:
+  path: str

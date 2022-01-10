@@ -1,0 +1,28 @@
+name: "JDownloader"
+description: "Headless jdownloader 2"
+version: "1.0.4"
+slug: "jdownloader"
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+
+options:
+  email:
+  password:
+
+schema:
+  email: email
+  password: password
+
+map:
+  - share:rw
+  - media:rw
+
+ports:
+  3129/tcp: 3129
+
+ports_description:
+  3129/tcp: Port used by MyJDownloader mobile applications and browser extensions to establish a direct connect to the JDownloader Docker container instance. Port needs to be exposed only if MyJDownloader is enabled and configured in Direct Connection mode.
